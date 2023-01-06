@@ -1,0 +1,80 @@
+nav {
+  width: 5rem;
+  max-width: 18rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgb(5, 10, 41);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 150ms ease-in-out;
+}
+nav ul {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.toggle_brand {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: baseline;
+}
+
+.brandName {
+  padding: 1rem 5rem 2rem 0;
+  font-size: 2.2rem;
+  color: #fff;
+}
+
+nav ul li {
+  padding: 1rem 0;
+}
+nav ul li a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Poppins", sans-serif;
+}
+
+nav ul li a span,
+.brandName {
+  display: none;
+  text-decoration: none;
+  font-family: "Roboto Condensed", sans-serif;
+  transition: display 300ms ease-in-out;
+}
+nav ul li a span {
+  font-size: 1.3rem;
+}
+nav ul li a img {
+  width: 1.7rem;
+  height: 1.7rem;
+  padding-right: 1rem;
+}
+@media screen and (max-height: 380px) {
+  .brandName {
+    padding: 0.5rem 5rem 2rem 0;
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  nav ul li {
+    padding: 0.7rem 0;
+  }
+  nav ul li a span {
+    font-size: 1.2rem;
+  }
+
+  nav ul li a img,
+  .toggle img {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+}
